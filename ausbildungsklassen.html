@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet'>
+    <title>Fahrschule</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            background-color: #b07b00;
+            height: 100px;
+            top: 0;
+            box-shadow: 0px 30px 30px 0px rgba(80, 80, 80, 1);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+        
+        li a {
+            font-size: 30px;
+            display: block;
+            color: #ebebeb;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Balsamiq Sans';
+            transition: 0.5s;
+        }
+        
+        li a:hover {
+            border-bottom: solid black 1px;
+            color: black;
+        }
+
+        .active {
+            font-size: 40px;
+            color: black;
+        }
+
+        .left {
+            float: left;
+            width: 50%;
+        }
+
+        .right {
+            display: flex;
+            float: right;
+            width: 50%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .checkout-button {
+            background-color: #b07b00;
+            font-size: 30px;
+            color: #ebebeb;
+            font-family: 'Balsamiq Sans';
+            margin-right: 20px;
+            padding: 10px;
+            border: none;
+            transition: 0.5s;
+        }
+
+        .checkout-button:hover {
+            border-bottom: solid black 1px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .main-content {
+            
+        }
+
+        .fahrklassen {
+            margin: 10rem 10px 0px 10px;
+        }
+
+        .container {
+            padding: 10px;
+            margin-bottom: 40px;
+            width: 70%;
+            margin-left: 15%;
+            height: 20rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(220, 220, 220, 1);
+        }
+
+        .fahrklassen-container-left {
+            width: 58%;
+            float: left;
+            margin-right: 2%;
+        }
+
+        .fahrklassen-container-right {
+            width: 40%;
+            float: right;
+        }
+
+        .fahrklassen-container-heading {
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .fahrklassen-container-body {
+            font-family: 'Average';
+            font-size: 20px;
+        }
+
+        .fahrklassen-container-image {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./ausbildungsklassen.html" class="active">Ausbildungsklassen</a></li>
+                <li><a href="./angebote.html">Angebote</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a class="checkout-button">Checkout <i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="fahrklassen">
+            <div class="container" id="first-container">
+                <div class="fahrklassen-container-left">
+                    <p class="fahrklassen-container-heading">Klasse B und BF17</p><hr>
+                    <p class="fahrklassen-container-body">Du träumst von der Freiheit beim Autofahren? Dann ist der Klasse B Führerschein genau der richtige für dich. Der BF17 Führerschein ermöglicht es dir bereits im Alter von 17 Jahren mit einer Begleitperson Auto zu fahren.</p>
+                </div>
+                <div class="fahrklassen-container-right">
+                    <img src="./img/auto.jpg" class="fahrklassen-container-image" alt="">
+                </div>
+            </div>
+            <div class="container" id="second-container">
+                <div class="fahrklassen-container-left">
+                    <p class="fahrklassen-container-heading">Klasse BE und B96</p><hr>
+                    <p class="fahrklassen-container-body">Mit dem Führerschein der Klasse BE darfst du sowohl Autofahren, als auch einen Anhänger bis maximal 3.500 KG ziehen. Mit dem B96 Führerschein darfst du zusätzlich noch mit einem Anhänger bis maximal 4.250 KG fahren.</p>
+                </div>
+                <div class="fahrklassen-container-right">
+                    <img src="./img/auto.jpg" class="fahrklassen-container-image" alt="">
+                </div>
+            </div>
+            <div class="container" id="third-container">
+                <div class="fahrklassen-container-left">
+                    <p class="fahrklassen-container-heading">Klasse B196</p><hr>
+                    <p class="fahrklassen-container-body">B196 ist eine Erweiterung der Klasse B, die es Dir erlaubt innerhalb Deutschlands Leichtkrafträder mit 125 cm³ zu fahren. Hierfür benötigst Du eine Fahrerschulung mit mindestens vier theoretischen und fünf praktischen Unterrichtseinheiten zu jeweils 90 Minuten. Weitere Voraussetzung ist der Vorbesitz der Pkw-Klasse B für mindestens 5 Jahre und ein Mindestalter von 25 Jahren.</p>
+                </div>
+                <div class="fahrklassen-container-right">
+                    <img src="./img/auto.jpg" class="fahrklassen-container-image" alt="">
+                </div>
+            </div>
+            <div class="container" id="fourth-container">
+                <div class="fahrklassen-container-left">
+                    <p class="fahrklassen-container-heading">Klasse AM, A1, A2, A</p><hr>
+                    <p class="fahrklassen-container-body">Du begeisterst dich für Motorräder? Dann eignet sich der Klasse A führerschein ideal für dich. Mit dem Führerschein der Klasse AM darfst du Kleinkrafträder mit einem Hubraum von 50ccm und einer Maximalgeschwindigkeit von 45 KM/H fahren. Die Klasse A1 erlaubt es dir Krafträder und dreirädrige Krafträder mit maximal 125ccm zu fahren. Mit dem Klasse A2 Führerschein darfst du Motorräder mit nicht mehr als 35 kW fahren. Der Klasse A führerschein bringt keine Einschränkungen mit sich.</p>
+                </div>
+                <div class="fahrklassen-container-right">
+                    <img src="./img/auto.jpg" class="fahrklassen-container-image" alt="">
+                </div>
+            </div>
+            <div class="container" id="fifth-container">
+                <div class="fahrklassen-container-left">
+                    <p class="fahrklassen-container-heading">Klasse L</p><hr>
+                    <p class="fahrklassen-container-body">Du möchtest den Führerschein machen, um Trecker fahren zu können? Mit dem Führerschein der Klasse L darfst du Zugmaschinen fahren die für land- oder forstwirtschaftliche Zwecke bestimmt sind.</p>
+                </div>
+                <div class="fahrklassen-container-right">
+                    <img src="./img/auto.jpg" class="fahrklassen-container-image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

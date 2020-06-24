@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+    <title>Fahrschule</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            background-color: #b07b00;
+            height: 100px;
+            top: 0;
+            box-shadow: 0px 30px 30px 0px rgba(80, 80, 80, 1);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-evenly;
+            align-items: center;
+            vertical-align: middle;
+        }
+        
+        li a {
+            font-size: 30px;
+            display: block;
+            color: #ebebeb;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Balsamiq Sans';
+            transition: 0.5s;
+            padding: 10px;
+        }
+        
+        li a:hover {
+            border-bottom: solid black 1px;
+            color: black;
+        }
+
+        .active {
+            font-size: 40px;
+            color: black;
+        }
+
+        .left {
+            float: left;
+            width: 50%;
+        }
+
+        .right {
+            display: flex;
+            float: right;
+            width: 50%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .checkout-button {
+            background-color: #b07b00;
+            font-size: 30px;
+            color: #ebebeb;
+            font-family: 'Balsamiq Sans';
+            margin-right: 20px;
+            padding: 10px;
+            border: none;
+            transition: 0.5s;
+        }
+
+        .checkout-button:hover {
+            border-bottom: solid black 1px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .main-content {
+            
+        }
+
+        .angebote {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 20px 0px rgba(220, 220, 220, 1);
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 5rem;
+        }
+
+        #auto-angebote {
+            margin-top: 10rem;
+        }
+
+        .splitter {
+            margin-top: 40px;
+            height: 35rem;
+            width: 2px;
+            background-color: rgb(80, 80, 80);
+        }
+
+        .angebot {
+            padding-top: 20px;
+            height: 40rem;
+            width: 20rem;
+            text-align: center;
+        }
+        .angebote-angebot-heading {
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .angebote-angebot-subheading {
+            font-size: 20px;
+            color: rgb(80, 80, 80);
+        }
+
+        .angebote-angebot-signup-button {
+            margin-top: 200px;
+            font-size: 30px;
+            display: block;
+            color: black;
+            border: solid black 1px;
+            text-decoration: none;
+            font-family: 'Balsamiq Sans';
+            padding: 10px;
+            box-shadow: none;
+            transition: 0.5s;
+        }
+
+        .angebote-angebot-signup-button:hover {
+            box-shadow: 0px 0px 15px 0px rgb(80, 80, 80);
+        }
+
+        .angebote-angebot-requirements {
+            text-align: start;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./ausbildungsklassen.html">Ausbildungsklassen</a></li>
+                <li><a class="active" href="./angebote.html">Angebote</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a class="checkout-button">Checkout <i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="angebote" id="auto-angebote">
+            <div class="angebot">
+                <p class="angebote-angebot-heading">B und BF17</p><hr>
+                <p class="angebote-angebot-subheading">Das meist-gewählte Angebot</p>
+                <a href="" class="angebote-angebot-signup-button">Jetzt starten</a>
+                <p class="angebote-angebot-requirements"><span style="font-size: 20px">Anforderungen</span><br>- Mindestens 16 1/2 Jahre alt</p>
+            </div>
+            <div class="splitter"></div>
+            <div class="angebot">
+                <p class="angebote-angebot-heading">BE und B96</p><hr>
+                <p class="angebote-angebot-subheading">Empfohlenes add-up</p>
+                <a href="" class="angebote-angebot-signup-button">Jetzt starten</a>
+                <p class="angebote-angebot-requirements"><span style="font-size: 20px">Anforderungen</span><br>- lorem ipsum</p>
+            </div>
+        </div>
+        <div class="angebote" id="motorrad-angebote">
+            <div class="angebot">
+                <p class="angebote-angebot-heading">B196</p><hr>
+                <p class="angebote-angebot-subheading">Motorrad Schnupperkurs</p>
+                <a href="" class="angebote-angebot-signup-button">Jetzt starten</a>
+                <p class="angebote-angebot-requirements"><span style="font-size: 20px">Anforderungen</span><br>- 5 Jahre Fahrerfahrung im Pkw<br>- Mindestalter von 25 Jahren</p>
+            </div>
+            <div class="splitter"></div>
+            <div class="angebot">
+                <p class="angebote-angebot-heading">AM, A1, A2 und A</p><hr>
+                <p class="angebote-angebot-subheading">Empfohlenes add-up</p>
+                <a href="" class="angebote-angebot-signup-button">Jetzt starten</a>
+                <p class="angebote-angebot-requirements"><span style="font-size: 20px">Anforderungen</span><br>- lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
